@@ -21,14 +21,17 @@ public class Clima {
     public static double buscarCelcius(double cel00){
         return Double.parseDouble(JOptionPane.showInputDialog(null,"Qual a temperatura em Graus Celsius ?","Mini Estação do Clima",JOptionPane.QUESTION_MESSAGE));  
     }
+    
     public static double buscarFahrenheit(double cel00){
         double fahr = (cel00* 1.8)+32;
         return fahr;
     }
+    
     public static double buscarKelvin(double cel00){
         double kelv = cel00 + 273.15;
         return kelv;
     }
+    
     public static void buscarClima(double cel00){
         if (cel00<=15){
             JOptionPane.showMessageDialog(null,"O clima está Frio!","Celsius "+cel00+"ºC",JOptionPane.INFORMATION_MESSAGE);
@@ -38,9 +41,7 @@ public class Clima {
             JOptionPane.showMessageDialog(null,"O clima está Quente!","Celsius "+cel00+"ºC",JOptionPane.INFORMATION_MESSAGE);
         }
     }
-    public static double mudar(double cel00){
-        return Double.parseDouble(JOptionPane.showInputDialog(null,"Qual a temperatura em Graus Celsius ?","Graus Celsius",JOptionPane.QUESTION_MESSAGE));
-    }
+    
     public static void finaliza(){
         JOptionPane.showMessageDialog(null,"Programa finalizado.","Encerrando",JOptionPane.INFORMATION_MESSAGE);
         System.exit(0);

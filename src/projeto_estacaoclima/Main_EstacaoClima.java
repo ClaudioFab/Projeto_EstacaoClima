@@ -34,8 +34,7 @@ public class Main_EstacaoClima {
                 base.buscarClima(base.getCelcius());
                 break;
             case 4:
-                double novo = base.mudar(0);
-                base.setCelcius(novo);
+                base.setCelcius(Clima.buscarCelcius(0));
                 continue;
             case 5:
                 base.finaliza();
