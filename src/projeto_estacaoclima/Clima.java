@@ -17,6 +17,7 @@ public class Clima {
     public void setCelcius(double Celcius) {
         this.Celcius = Celcius;
     }
+    
     public static double buscarCelcius(double cel00){
         return Double.parseDouble(JOptionPane.showInputDialog(null,"Qual a temperatura em Graus Celsius ?","Mini Estação do Clima",JOptionPane.QUESTION_MESSAGE));  
     }
